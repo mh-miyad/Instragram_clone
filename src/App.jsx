@@ -1,15 +1,22 @@
-import React from 'react'
-import LogIn from './Pages/LoginPage/LogIn'
-
+import React from "react";
+import { Outlet } from "react-router-dom";
+import SideCom from "./components/SideBar/SideCom";
 
 const App = () => {
   return (
     <div>
-
-      <LogIn/>
-   
+      <div className="flex  justify-between">
+        <div>
+          <SideCom />
+        </div>
+        <div>
+          {" "}
+          <Outlet />
+        </div>
+        <div> Coming Soon ... Popular Part </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
