@@ -1,0 +1,8 @@
+#sidebar .active {
+  background: #caf1ff;
+  color: rgb(5, 1, 1);
+  padding: 10px 95px;
+  border-radius: 5px;
+
+  font-weight: bold;
+}

@@ -5,7 +5,7 @@ import SideCom from "./components/SideBar/SideCom";
 const App = () => {
   return (
     <div>
-      <div className="flex  justify-between">
+      <div className="flex justify-around">
         <div>
           <SideCom />
         </div>
@@ -13,7 +13,7 @@ const App = () => {
           {" "}
           <Outlet />
         </div>
-        <div> Coming Soon ... Popular Part </div>
+        <div className="hidden md:block"> Coming Soon ... Popular Part </div>
       </div>
     </div>
   );

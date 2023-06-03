@@ -1,5 +1,7 @@
 import { Sidebar } from 'flowbite-react'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import "./Sildebar.css"
 
 const SideCom = () => {
   return (
@@ -12,12 +14,14 @@ const SideCom = () => {
     <span className='text-4xl uppercase'> instagram</span>
   </Sidebar.Logo>
   <Sidebar.Items>
-    <Sidebar.ItemGroup>
+    <Sidebar.ItemGroup id='sidebar'>
       <Sidebar.Item
-        href="#"
+     
         
       >
-         Home 
+        <NavLink to={'/'}>
+          Home
+        </NavLink>
       </Sidebar.Item>
       <Sidebar.Item
         href="#"
